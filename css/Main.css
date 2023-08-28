@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+
+
+º{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+}
+
+.filter{
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7;
+
+    background: rgb(21,232,10);
+background: -moz-linear-gradient(207deg, rgba(21,232,10,1) 0%, rgba(1,74,89,1) 100%);
+background: -webkit-linear-gradient(207deg, rgba(21,232,10,1) 0%, rgba(1,74,89,1) 100%);
+background: linear-gradient(207deg, rgba(21,232,10,1) 0%, rgba(1,74,89,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#15e80a",endColorstr="#014a59",GradientType=1);
+}
+
+
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(32,32,32,.3);
+    background: #fafafa;
+    text-align: center;
+}
+
+th,td{
+    padding: 10px 15px;
+}
+
+
+th{
+    background: #4CAF50;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+td{
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+tr:nth-child(odd){
+    background-color: #eeeeee;
+}
